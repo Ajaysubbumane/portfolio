@@ -1,0 +1,27 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "CineVerse",
+      "description": "Full-stack movie and TV show discovery platform with AI-powered recommendations and rich media integration.",
+      "longDescription": "A comprehensive movie and TV show discovery application built with Django REST Framework backend and React 18 frontend. Features JWT-based authentication, TMDB API integration for comprehensive movie metadata, YouTube API for official trailers, and Spotify API for soundtrack recommendations with 30-second audio previews. Implements machine learning-based recommendations using TF-IDF vectorization and cosine similarity for content-based filtering. Users can manage favorites and watchlists, explore trending content, search across catalogs, and receive mood-based AI recommendation suggestions. Includes smart caching strategy to optimize API calls and reduce latency. Admin dashboard for user administration. Production-ready architecture with proper separation of concerns and REST principles.",
+      "technologies": [
+        "Django 4.2",
+        "Django REST Framework",
+        "React 18",
+        "Material-UI",
+        "JWT Authentication",
+        "scikit-learn",
+        "TMDB API",
+        "YouTube API",
+        "Spotify API",
+        "MySQL",
+        "Context API",
+        "Axios"
+      ],
+      "link": "#",
+      "image": "project5.jpg",
+      "category": "Web Application"
+    }
+  ]
+}
