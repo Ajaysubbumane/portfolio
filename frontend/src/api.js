@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 // Determine API URL based on environment
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://127.0.0.1:5000/api';
+// In production, use the Render backend URL
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://portfolio-1-7r85.onrender.com/api';
 
 const api = axios.create({
   baseURL: API_BASE_URL,
