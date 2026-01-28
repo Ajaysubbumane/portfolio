@@ -523,5 +523,7 @@ def delete_certificate(cert_id):
     return jsonify({"message": "Certificate deleted successfully"}), 200
 
 if __name__ == '__main__':
-    # Production: use WSGI server like Gunicorn
-    app.run(debug=False, port=5000)
+    # Get port from environment variable or default to 5000
+    port = int(os.getenv('PORT', 5000))
+    # Listen on all interfaces (0.0.0.0) for cloud deployment
+    app.run(host='0.0.0.0', port=port, debug=False)
